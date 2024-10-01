@@ -3,7 +3,7 @@ import Image from "next/image";
 export function Section2() {
   return (
     <div className={`w-full`}>
-      <section className={`flex flex-col max-sm:mt-2 md:bg-[rgb(231,217,217)] max-sm:bg-[rgb(231,217,217)]`} >
+      <section className={`flex flex-col max-sm:mt-2 md:mt-6 md:bg-[rgb(231,217,217)] max-sm:bg-[rgb(231,217,217)]`} >
         <div className={`flex m-auto max-sm:mt-6 md:gap-10 items-center`}>
           <div className={`flex flex-col`}>
             <div className={`md:flex gap-[187px] md:mt-6 items-center`}>

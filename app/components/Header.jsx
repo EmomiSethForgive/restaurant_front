@@ -1,6 +1,7 @@
-"use client"
+"use client";
 import Image from "next/image";
 import styles from "./header.module.css";
+import { Butréservation } from "./Butréservation";
 import Link from "next/link";
 export const Header = () => {
   return (
@@ -9,7 +10,9 @@ export const Header = () => {
         <nav
           className={`${styles.nav} flex justify-between w-full items-center text-center`}
         >
-          <div className= {`${styles.img_pc} flex items-center text-center ml-10 mt-3`}>
+          <div
+            className={`${styles.img_pc} flex items-center text-center ml-10 mt-3`}
+          >
             <img
               src="./assets/logo.svg"
               alt=""
@@ -17,9 +20,15 @@ export const Header = () => {
               height={112}
               className={`${styles.img_pc}`}
             />
-            <p className= {`${styles.img_pc} font-bold text-2xl leading-10 text-white`}>Saveurs Bantu </p>
+            <p
+              className={`${styles.img_pc} font-bold text-2xl leading-10 text-white`}
+            >
+              Saveurs Bantu{" "}
+            </p>
           </div>
-          <section className= {` ${styles.section} flex items-center text-center ml-1 mt-3`}>
+          <section
+            className={` ${styles.section} flex items-center text-center ml-1 mt-3`}
+          >
             <img
               src="./assets/logo.svg"
               alt=""
@@ -38,43 +47,44 @@ export const Header = () => {
             height={23}
             className={`${styles.menu}  mr-3 mt-3`}
           />
-<<<<<<< HEAD
-          <div className="flex items-center text-center gap-[50px] mr-12 mt-3">
-            <ul className="flex gap-[50px]">
-              <li className="font-bold leading-10 text-2xl  text-white">Acceuil</li>
-              <li className="font-bold leading-10 text-2xl  text-white">Menu</li>
-              <li className="font-bold leading-10 text-2xl  text-white">Blog</li>
-              <li className="font-bold leading-10 text-2xl  text-white">A propos</li>
-              <li className="font-bold leading-10 text-2xl  text-white">Contact</li>
-           
-=======
           <div
             className={`${styles.img_pc} flex items-center text-center gap-[30px] mr-16 mt-3`}
           >
             <ul className="flex gap-[30px]">
-              <li className="font-bold leading-10 text-2xl  text-white">  <Link href="#"></Link>
+              <Link
+                href="../"
+                className="font-bold leading-10 text-2xl  text-white"
+              >
+                {" "}
                 Acceuil
-              </li>
-              <li className="font-bold leading-10 text-2xl  text-white">  <Link href="#"></Link> 
+              </Link>
+              <Link
+                href="../menu"
+                className="font-bold leading-10 text-2xl  text-white"
+              >
                 Menu
-              </li>
-              <li className="font-bold leading-10 text-2xl  text-white">  <Link href="#"></Link> 
+              </Link>
+              <Link
+                href="../mobile_blocs"
+                className="font-bold leading-10 text-2xl  text-white"
+              >
                 Blog
-              </li>
-              <li className="font-bold leading-10 text-2xl  text-white">  <Link href="#"></Link> 
+              </Link>
+              <Link
+                href="../propos"
+                className="font-bold leading-10 text-2xl  text-white"
+              >
                 A propos
-              </li>
-              <li className="font-bold leading-10 text-2xl  text-white">  <Link href="#"></Link> 
+              </Link>
+              <Link
+                href="../contacts"
+                className="font-bold leading-10 text-2xl  text-white"
+              >
+                {" "}
                 Contact
-              </li>
-              {/* <li>
-                <a href=""></a>
-              </li> */}
->>>>>>> 870d1ab6ecb2d2b33158ce054c1266686c4b35b1
+              </Link>
             </ul>
-            <button className="font-bold text-base leading-9 rounded-xl bg-red-600 h-[47px] w-[158px] text-white ">
-              <Link href="#"></Link>Reservation
-            </button>
+            <Butréservation />
           </div>
         </nav>
       </header>

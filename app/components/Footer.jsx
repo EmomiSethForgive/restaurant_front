@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-                       
-=======
 import styles from "./footer.module.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -229,4 +226,3 @@ export function Footer() {
     
   );
 }
->>>>>>> 870d1ab6ecb2d2b33158ce054c1266686c4b35b1
